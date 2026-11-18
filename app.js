@@ -540,4 +540,11 @@
       downloadText(`${prefix}-notes.html`,`<!doctype html><html><head><meta charset="utf-8"><title>${prefix} notes</title></head><body>${x.primaryNotes.getHTML()}</body></html>`);
     });
   });
+
+    // Clear all scratch work when the user leaves and returns using Back/Forward.
+  window.addEventListener("pageshow", (event) => {
+    if (event.persisted) {
+      window.location.reload();
+    }
+  });
 })();
