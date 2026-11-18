@@ -515,7 +515,7 @@
       <p>The Accessibility tab includes text size, node size, edge thickness, dark mode, high contrast, a colorblind-friendly palette, a dyslexia-friendly font, extra text spacing, and focus mode. Accessibility settings apply to both question tabs.</p>
       <h3>Download</h3>
       <p><strong>Download Work</strong> downloads the main whiteboard and notepad for both Workspace 1 and Workspace 2. Blank Split View is intentionally not included.</p>
-      <p class="notice"><strong>Nothing is saved automatically.</strong> Closing or refreshing the browser clears the work. The site does not use localStorage, sessionStorage, IndexedDB, cookies, analytics, a backend, or collaboration features.</p>`;
+      <p class="notice"><strong>Nothing is saved automatically.</strong> Closing or refreshing the browser or pressing the back arrow clears the work. The site does not use localStorage, sessionStorage, IndexedDB, cookies, analytics, a backend, or collaboration features.</p>`;
   }
 
   function downloadBlob(name, blob){const u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);}
